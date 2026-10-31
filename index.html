@@ -1,57 +1,335 @@
 
-<section id="featured-product" style="padding:70px 6%;background:#f8f7f2;">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <div class="eyebrow">FEATURED FIND · TECH & GADGETS</div>
+  <meta name="description"
+        content="Smart Finds India shares useful product discoveries, shopping ideas and practical recommendations for Indian shoppers.">
 
-  <h2 style="font:500 clamp(32px,4vw,50px) Georgia,serif;">
-    Discover our latest find
-  </h2>
+  <title>Smart Finds India | Thoughtful Everyday Discoveries</title>
+  <link rel="stylesheet" href="style.css">
 
-  <article style="
-    background:white;
-    border:1px solid #dfe4da;
-    border-radius:12px;
-    padding:32px;
-    max-width:760px;
-    margin-top:30px;
-  ">
+  <style>
+    .featured {
+      padding: 85px max(6vw,24px);
+      background: #f8f7f2;
+    }
 
-    <span style="color:#658773;font-size:13px;">
-      AMAZON INDIA · PARTY SPEAKER
-    </span>
+    .featured-card {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 32px;
+      align-items: center;
+      background: white;
+      border: 1px solid #dfe4da;
+      border-radius: 12px;
+      padding: 36px;
+      margin-top: 35px;
+      max-width: 950px;
+    }
 
-    <h3 style="font:500 30px Georgia,serif;">
-      ZEBRONICS Thump 700 Party Speaker
-    </h3>
+    .featured-icon {
+      background: #e0e9e5;
+      color: #254b3b;
+      font-size: 82px;
+      min-height: 190px;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+    }
 
-    <p style="color:#627069;line-height:1.8;">
-      Explore a portable party speaker advertised with
-      120W output, two wireless microphones, Bluetooth
-      connectivity, RGB lighting and karaoke features.
+    .featured-card h3 {
+      font: 500 32px Georgia, serif;
+      margin: 12px 0;
+    }
+
+    .featured-card p {
+      color: #627069;
+      line-height: 1.75;
+    }
+
+    .featured-card .btn {
+      display: inline-block;
+      margin-top: 12px;
+    }
+
+    .affiliate-small {
+      margin-top: 24px;
+      font-size: 12px;
+      color: #627069;
+    }
+
+    @media(max-width:650px) {
+      .featured-card {
+        grid-template-columns: 1fr;
+        padding: 22px;
+      }
+
+      .featured-icon {
+        min-height: 125px;
+        font-size: 58px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="nav">
+  <a class="brand" href="./">
+    <span class="brandmark">✦</span>
+    Smart Finds <span class="india">India</span>
+  </a>
+
+  <nav>
+    <a href="#categories">Explore</a>
+    <a href="#featured">Products</a>
+    <a href="#about">About</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="eyebrow">
+      CURATED IDEAS · EVERYDAY INSPIRATION
+    </div>
+
+    <h1>
+      Small discoveries.<br>
+      <em>Better everyday living.</em>
+    </h1>
+
+    <p>
+      Practical ideas for your home, desk,
+      wardrobe and everyday routine.
+
+      Discover useful finds and thoughtful
+      shopping inspiration in one place.
     </p>
 
-    <p style="color:#627069;font-size:14px;">
-      Check Amazon for current pricing, availability
-      and product specifications.
+    <div class="actions">
+      <a class="btn" href="#featured">
+        Explore our latest find ↗
+      </a>
+
+      <a class="secondary"
+         href="https://in.pinterest.com/kalyanreddypanyam/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Visit our Pinterest ↗
+      </a>
+    </div>
+
+    <div class="note">
+      Independent content · India-focused inspiration
+    </div>
+
+  </section>
+
+
+  <!-- CATEGORIES -->
+
+  <section id="categories" class="section">
+
+    <div class="eyebrow">WHAT WE EXPLORE</div>
+
+    <h2>Find what fits your life.</h2>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="art art1">⌂</div>
+        <div class="cardbody">
+          <span>01 / HOME</span>
+          <h3>Home & Kitchen</h3>
+          <p>
+            Useful organizers, storage ideas and
+            practical everyday home discoveries.
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="art art2">⌘</div>
+        <div class="cardbody">
+          <span>02 / TECH</span>
+          <h3>Tech & Gadgets</h3>
+          <p>
+            Electronics, practical accessories,
+            desk setups and everyday technology.
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="art art3">✧</div>
+        <div class="cardbody">
+          <span>03 / STYLE</span>
+          <h3>Fashion & Style</h3>
+          <p>
+            Accessories, styling inspiration
+            and practical daily essentials.
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="art art4">❋</div>
+        <div class="cardbody">
+          <span>04 / WELLNESS</span>
+          <h3>Beauty & Self-Care</h3>
+          <p>
+            Thoughtful routines and simple
+            self-care ideas.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURED PRODUCT -->
+
+  <section id="featured" class="featured">
+
+    <div class="eyebrow">
+      FEATURED FIND · TECH & GADGETS
+    </div>
+
+    <h2>Discover our latest find.</h2>
+
+    <article class="featured-card">
+
+      <div class="featured-icon" aria-hidden="true">
+        ♫
+      </div>
+
+      <div>
+        <div class="eyebrow">
+          AMAZON INDIA · PARTY SPEAKER
+        </div>
+
+        <h3>ZEBRONICS Thump 700 Party Speaker</h3>
+
+        <p>
+          Explore a portable party speaker
+          advertised with 120W output,
+          two wireless microphones,
+          Bluetooth connectivity,
+          RGB lighting and karaoke features.
+        </p>
+
+        <p>
+          Learn about its advertised features
+          and what to consider before buying.
+        </p>
+
+        <a
+          class="btn"
+          href="./zebronics-thump-700.html">
+          View product details ↗
+        </a>
+
+        <p class="affiliate-small">
+          Affiliate disclosure:
+          As an Amazon Associate I earn
+          from qualifying purchases.
+        </p>
+      </div>
+
+    </article>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section id="about" class="about">
+
+    <div>
+      <div class="eyebrow">
+        ABOUT SMART FINDS INDIA
+      </div>
+
+      <h2>Useful over overwhelming.</h2>
+    </div>
+
+    <div>
+      <p>
+        Smart Finds India is an independent
+        content project focused on useful
+        products and practical shopping inspiration.
+      </p>
+
+      <p>
+        We aim to share clear product information,
+        shopping considerations and relevant
+        discoveries for Indian consumers.
+      </p>
+
+      <p>
+        Our content-management automation is being
+        developed to help organize product records
+        and prepare content for our Pinterest account.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- AFFILIATE DISCLOSURE -->
+
+  <section class="disclosure">
+
+    <h2>Affiliate disclosure</h2>
+
+    <p>
+      As an Amazon Associate I earn from
+      qualifying purchases.
     </p>
 
-    <a
-      href="zebronics-thump-700.html"
-      class="btn"
-      style="display:inline-block;margin-top:15px;"
-    >
-      Explore this product ↗
+    <p>
+      Some links on this website are affiliate links.
+      We may earn a commission when you make
+      a qualifying purchase through those links,
+      at no additional cost to you.
+    </p>
+
+    <p>
+      Prices, availability and product information
+      may change. Always verify the latest details
+      on the seller's website.
+    </p>
+
+  </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <span>© 2026 Smart Finds India</span>
+
+  <div>
+    <a href="./">Home</a>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="https://in.pinterest.com/kalyanreddypanyam/">
+      Pinterest
     </a>
+  </div>
 
-    <p style="
-      color:#627069;
-      font-size:12px;
-      line-height:1.7;
-      margin-top:25px;
-    ">
-      Affiliate disclosure: As an Amazon Associate
-      I earn from qualifying purchases.
-    </p>
+</footer>
 
-  </article>
-</section>
+</body>
+</html>
